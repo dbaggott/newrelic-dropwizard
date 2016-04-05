@@ -1,0 +1,36 @@
+<assembly>
+    <!--
+    Assembles New Relic NPI-compatible plugin distribution
+    https://docs.newrelic.com/docs/plugins/developing-plugins/sharing-your-plugin/using-new-relic-platform-installer-npi-utility#requirements
+    -->
+    <id>bin</id>
+    <formats>
+        <!-- Note: NPI supports either but, for unknown reasons, NPI broke when working with the tar.gz version -->
+        <format>tar.gz</format>
+        <format>zip</format>
+    </formats>
+    <fileSets>
+        <fileSet>
+            <includes>
+                <include>README*</include>
+                <include>LICENSE*</include>
+                <include>NOTICE*</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <directory>target</directory>
+            <!-- empty outputDirectory root -->
+            <outputDirectory/>
+            <includes>
+                <include>plugin.jar</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <directory>src/main/resources/config</directory>
+            <outputDirectory>config</outputDirectory>
+            <includes>
+                <include>*</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+</assembly>

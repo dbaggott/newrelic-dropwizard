@@ -1,0 +1,7 @@
+{
+    "_commment": "For further info:  https://github.com/newrelic-platform/metrics_publish_java#configuration-options",
+    "license_key": "YOUR_LICENSE_KEY_HERE",
+    "log_level": "info",
+    "log_file_name": "newrelic_dropwizard_plugin.log",
+    "log_file_path": "logs"
+}

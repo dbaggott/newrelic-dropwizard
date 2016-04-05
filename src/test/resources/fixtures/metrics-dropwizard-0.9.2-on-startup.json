@@ -1,0 +1,650 @@
+{
+  "version" : "3.0.0",
+  "gauges" : {
+    "io.dropwizard.jetty.MutableServletContextHandler.percent-4xx-15m" : {
+      "value" : "NaN"
+    },
+    "io.dropwizard.jetty.MutableServletContextHandler.percent-4xx-1m" : {
+      "value" : "NaN"
+    },
+    "io.dropwizard.jetty.MutableServletContextHandler.percent-4xx-5m" : {
+      "value" : "NaN"
+    },
+    "io.dropwizard.jetty.MutableServletContextHandler.percent-5xx-15m" : {
+      "value" : "NaN"
+    },
+    "io.dropwizard.jetty.MutableServletContextHandler.percent-5xx-1m" : {
+      "value" : "NaN"
+    },
+    "io.dropwizard.jetty.MutableServletContextHandler.percent-5xx-5m" : {
+      "value" : "NaN"
+    },
+    "jvm.attribute.name" : {
+      "value" : "24619@Macintosh-2.local"
+    },
+    "jvm.attribute.uptime" : {
+      "value" : 57131
+    },
+    "jvm.attribute.vendor" : {
+      "value" : "Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 25.45-b02 (1.8)"
+    },
+    "jvm.buffers.direct.capacity" : {
+      "value" : 20835
+    },
+    "jvm.buffers.direct.count" : {
+      "value" : 3
+    },
+    "jvm.buffers.direct.used" : {
+      "value" : 20835
+    },
+    "jvm.buffers.mapped.capacity" : {
+      "value" : 0
+    },
+    "jvm.buffers.mapped.count" : {
+      "value" : 0
+    },
+    "jvm.buffers.mapped.used" : {
+      "value" : 0
+    },
+    "jvm.classloader.loaded" : {
+      "value" : 5758
+    },
+    "jvm.classloader.unloaded" : {
+      "value" : 0
+    },
+    "jvm.filedescriptor" : {
+      "value" : 0.0193359375
+    },
+    "jvm.gc.PS-MarkSweep.count" : {
+      "value" : 1
+    },
+    "jvm.gc.PS-MarkSweep.time" : {
+      "value" : 36
+    },
+    "jvm.gc.PS-Scavenge.count" : {
+      "value" : 4
+    },
+    "jvm.gc.PS-Scavenge.time" : {
+      "value" : 33
+    },
+    "jvm.memory.heap.committed" : {
+      "value" : 217055232
+    },
+    "jvm.memory.heap.init" : {
+      "value" : 268435456
+    },
+    "jvm.memory.heap.max" : {
+      "value" : 3817865216
+    },
+    "jvm.memory.heap.usage" : {
+      "value" : 0.02272678030548892
+    },
+    "jvm.memory.heap.used" : {
+      "value" : 86767784
+    },
+    "jvm.memory.non-heap.committed" : {
+      "value" : 43843584
+    },
+    "jvm.memory.non-heap.init" : {
+      "value" : 2555904
+    },
+    "jvm.memory.non-heap.max" : {
+      "value" : -1
+    },
+    "jvm.memory.non-heap.usage" : {
+      "value" : -4.2966104E7
+    },
+    "jvm.memory.non-heap.used" : {
+      "value" : 42966104
+    },
+    "jvm.memory.pools.Code-Cache.committed" : {
+      "value" : 9240576
+    },
+    "jvm.memory.pools.Code-Cache.init" : {
+      "value" : 2555904
+    },
+    "jvm.memory.pools.Code-Cache.max" : {
+      "value" : 251658240
+    },
+    "jvm.memory.pools.Code-Cache.usage" : {
+      "value" : 0.03662516276041667
+    },
+    "jvm.memory.pools.Code-Cache.used" : {
+      "value" : 9229120
+    },
+    "jvm.memory.pools.Compressed-Class-Space.committed" : {
+      "value" : 4063232
+    },
+    "jvm.memory.pools.Compressed-Class-Space.init" : {
+      "value" : 0
+    },
+    "jvm.memory.pools.Compressed-Class-Space.max" : {
+      "value" : 1073741824
+    },
+    "jvm.memory.pools.Compressed-Class-Space.usage" : {
+      "value" : 0.0036335289478302
+    },
+    "jvm.memory.pools.Compressed-Class-Space.used" : {
+      "value" : 3901472
+    },
+    "jvm.memory.pools.Metaspace.committed" : {
+      "value" : 30539776
+    },
+    "jvm.memory.pools.Metaspace.init" : {
+      "value" : 0
+    },
+    "jvm.memory.pools.Metaspace.max" : {
+      "value" : -1
+    },
+    "jvm.memory.pools.Metaspace.usage" : {
+      "value" : 0.9773693166577253
+    },
+    "jvm.memory.pools.Metaspace.used" : {
+      "value" : 29848640
+    },
+    "jvm.memory.pools.PS-Eden-Space.committed" : {
+      "value" : 95944704
+    },
+    "jvm.memory.pools.PS-Eden-Space.init" : {
+      "value" : 67108864
+    },
+    "jvm.memory.pools.PS-Eden-Space.max" : {
+      "value" : 1414529024
+    },
+    "jvm.memory.pools.PS-Eden-Space.usage" : {
+      "value" : 0.0507535941517733
+    },
+    "jvm.memory.pools.PS-Eden-Space.used" : {
+      "value" : 71792432
+    },
+    "jvm.memory.pools.PS-Old-Gen.committed" : {
+      "value" : 115343360
+    },
+    "jvm.memory.pools.PS-Old-Gen.init" : {
+      "value" : 179306496
+    },
+    "jvm.memory.pools.PS-Old-Gen.max" : {
+      "value" : 2863661056
+    },
+    "jvm.memory.pools.PS-Old-Gen.usage" : {
+      "value" : 0.003333514621082307
+    },
+    "jvm.memory.pools.PS-Old-Gen.used" : {
+      "value" : 9546056
+    },
+    "jvm.memory.pools.PS-Survivor-Space.committed" : {
+      "value" : 5767168
+    },
+    "jvm.memory.pools.PS-Survivor-Space.init" : {
+      "value" : 11010048
+    },
+    "jvm.memory.pools.PS-Survivor-Space.max" : {
+      "value" : 5767168
+    },
+    "jvm.memory.pools.PS-Survivor-Space.usage" : {
+      "value" : 0.9414145729758523
+    },
+    "jvm.memory.pools.PS-Survivor-Space.used" : {
+      "value" : 5429296
+    },
+    "jvm.memory.total.committed" : {
+      "value" : 260964352
+    },
+    "jvm.memory.total.init" : {
+      "value" : 270991360
+    },
+    "jvm.memory.total.max" : {
+      "value" : 3817865215
+    },
+    "jvm.memory.total.used" : {
+      "value" : 129757728
+    },
+    "jvm.threads.blocked.count" : {
+      "value" : 6
+    },
+    "jvm.threads.count" : {
+      "value" : 36
+    },
+    "jvm.threads.daemon.count" : {
+      "value" : 6
+    },
+    "jvm.threads.deadlock.count" : {
+      "value" : 0
+    },
+    "jvm.threads.deadlocks" : {
+      "value" : [ ]
+    },
+    "jvm.threads.new.count" : {
+      "value" : 0
+    },
+    "jvm.threads.runnable.count" : {
+      "value" : 22
+    },
+    "jvm.threads.terminated.count" : {
+      "value" : 0
+    },
+    "jvm.threads.timed_waiting.count" : {
+      "value" : 4
+    },
+    "jvm.threads.waiting.count" : {
+      "value" : 4
+    },
+    "org.eclipse.jetty.util.thread.QueuedThreadPool.dw.jobs" : {
+      "value" : 0
+    },
+    "org.eclipse.jetty.util.thread.QueuedThreadPool.dw.size" : {
+      "value" : 13
+    },
+    "org.eclipse.jetty.util.thread.QueuedThreadPool.dw.utilization" : {
+      "value" : 0.9230769230769231
+    },
+    "org.eclipse.jetty.util.thread.QueuedThreadPool.dw.utilization-max" : {
+      "value" : 0.01171875
+    }
+  },
+  "counters" : {
+    "io.dropwizard.jetty.MutableServletContextHandler.active-dispatches" : {
+      "count" : 0
+    },
+    "io.dropwizard.jetty.MutableServletContextHandler.active-requests" : {
+      "count" : 0
+    },
+    "io.dropwizard.jetty.MutableServletContextHandler.active-suspended" : {
+      "count" : 0
+    }
+  },
+  "histograms" : { },
+  "meters" : {
+    "ch.qos.logback.core.Appender.all" : {
+      "count" : 22,
+      "m15_rate" : 4.162221663189766,
+      "m1_rate" : 1.9122321174311452,
+      "m5_rate" : 3.724519589518702,
+      "mean_rate" : 0.3965889925233698,
+      "units" : "events/second"
+    },
+    "ch.qos.logback.core.Appender.debug" : {
+      "count" : 0,
+      "m15_rate" : 0.0,
+      "m1_rate" : 0.0,
+      "m5_rate" : 0.0,
+      "mean_rate" : 0.0,
+      "units" : "events/second"
+    },
+    "ch.qos.logback.core.Appender.error" : {
+      "count" : 0,
+      "m15_rate" : 0.0,
+      "m1_rate" : 0.0,
+      "m5_rate" : 0.0,
+      "mean_rate" : 0.0,
+      "units" : "events/second"
+    },
+    "ch.qos.logback.core.Appender.info" : {
+      "count" : 22,
+      "m15_rate" : 4.162221663189766,
+      "m1_rate" : 1.9122321174311452,
+      "m5_rate" : 3.724519589518702,
+      "mean_rate" : 0.3966070305957813,
+      "units" : "events/second"
+    },
+    "ch.qos.logback.core.Appender.trace" : {
+      "count" : 0,
+      "m15_rate" : 0.0,
+      "m1_rate" : 0.0,
+      "m5_rate" : 0.0,
+      "mean_rate" : 0.0,
+      "units" : "events/second"
+    },
+    "ch.qos.logback.core.Appender.warn" : {
+      "count" : 0,
+      "m15_rate" : 0.0,
+      "m1_rate" : 0.0,
+      "m5_rate" : 0.0,
+      "mean_rate" : 0.0,
+      "units" : "events/second"
+    },
+    "io.dropwizard.jetty.MutableServletContextHandler.1xx-responses" : {
+      "count" : 0,
+      "m15_rate" : 0.0,
+      "m1_rate" : 0.0,
+      "m5_rate" : 0.0,
+      "mean_rate" : 0.0,
+      "units" : "events/second"
+    },
+    "io.dropwizard.jetty.MutableServletContextHandler.2xx-responses" : {
+      "count" : 0,
+      "m15_rate" : 0.0,
+      "m1_rate" : 0.0,
+      "m5_rate" : 0.0,
+      "mean_rate" : 0.0,
+      "units" : "events/second"
+    },
+    "io.dropwizard.jetty.MutableServletContextHandler.3xx-responses" : {
+      "count" : 0,
+      "m15_rate" : 0.0,
+      "m1_rate" : 0.0,
+      "m5_rate" : 0.0,
+      "mean_rate" : 0.0,
+      "units" : "events/second"
+    },
+    "io.dropwizard.jetty.MutableServletContextHandler.4xx-responses" : {
+      "count" : 0,
+      "m15_rate" : 0.0,
+      "m1_rate" : 0.0,
+      "m5_rate" : 0.0,
+      "mean_rate" : 0.0,
+      "units" : "events/second"
+    },
+    "io.dropwizard.jetty.MutableServletContextHandler.5xx-responses" : {
+      "count" : 0,
+      "m15_rate" : 0.0,
+      "m1_rate" : 0.0,
+      "m5_rate" : 0.0,
+      "mean_rate" : 0.0,
+      "units" : "events/second"
+    },
+    "io.dropwizard.jetty.MutableServletContextHandler.async-dispatches" : {
+      "count" : 0,
+      "m15_rate" : 0.0,
+      "m1_rate" : 0.0,
+      "m5_rate" : 0.0,
+      "mean_rate" : 0.0,
+      "units" : "events/second"
+    },
+    "io.dropwizard.jetty.MutableServletContextHandler.async-timeouts" : {
+      "count" : 0,
+      "m15_rate" : 0.0,
+      "m1_rate" : 0.0,
+      "m5_rate" : 0.0,
+      "mean_rate" : 0.0,
+      "units" : "events/second"
+    }
+  },
+  "timers" : {
+    "com.cafepress.dropwizard.spring.hello.HelloResource.greeting" : {
+      "count" : 0,
+      "max" : 0.0,
+      "mean" : 0.0,
+      "min" : 0.0,
+      "p50" : 0.0,
+      "p75" : 0.0,
+      "p95" : 0.0,
+      "p98" : 0.0,
+      "p99" : 0.0,
+      "p999" : 0.0,
+      "stddev" : 0.0,
+      "m15_rate" : 0.0,
+      "m1_rate" : 0.0,
+      "m5_rate" : 0.0,
+      "mean_rate" : 0.0,
+      "duration_units" : "seconds",
+      "rate_units" : "calls/second"
+    },
+    "io.dropwizard.jetty.MutableServletContextHandler.connect-requests" : {
+      "count" : 0,
+      "max" : 0.0,
+      "mean" : 0.0,
+      "min" : 0.0,
+      "p50" : 0.0,
+      "p75" : 0.0,
+      "p95" : 0.0,
+      "p98" : 0.0,
+      "p99" : 0.0,
+      "p999" : 0.0,
+      "stddev" : 0.0,
+      "m15_rate" : 0.0,
+      "m1_rate" : 0.0,
+      "m5_rate" : 0.0,
+      "mean_rate" : 0.0,
+      "duration_units" : "seconds",
+      "rate_units" : "calls/second"
+    },
+    "io.dropwizard.jetty.MutableServletContextHandler.delete-requests" : {
+      "count" : 0,
+      "max" : 0.0,
+      "mean" : 0.0,
+      "min" : 0.0,
+      "p50" : 0.0,
+      "p75" : 0.0,
+      "p95" : 0.0,
+      "p98" : 0.0,
+      "p99" : 0.0,
+      "p999" : 0.0,
+      "stddev" : 0.0,
+      "m15_rate" : 0.0,
+      "m1_rate" : 0.0,
+      "m5_rate" : 0.0,
+      "mean_rate" : 0.0,
+      "duration_units" : "seconds",
+      "rate_units" : "calls/second"
+    },
+    "io.dropwizard.jetty.MutableServletContextHandler.dispatches" : {
+      "count" : 0,
+      "max" : 0.0,
+      "mean" : 0.0,
+      "min" : 0.0,
+      "p50" : 0.0,
+      "p75" : 0.0,
+      "p95" : 0.0,
+      "p98" : 0.0,
+      "p99" : 0.0,
+      "p999" : 0.0,
+      "stddev" : 0.0,
+      "m15_rate" : 0.0,
+      "m1_rate" : 0.0,
+      "m5_rate" : 0.0,
+      "mean_rate" : 0.0,
+      "duration_units" : "seconds",
+      "rate_units" : "calls/second"
+    },
+    "io.dropwizard.jetty.MutableServletContextHandler.get-requests" : {
+      "count" : 0,
+      "max" : 0.0,
+      "mean" : 0.0,
+      "min" : 0.0,
+      "p50" : 0.0,
+      "p75" : 0.0,
+      "p95" : 0.0,
+      "p98" : 0.0,
+      "p99" : 0.0,
+      "p999" : 0.0,
+      "stddev" : 0.0,
+      "m15_rate" : 0.0,
+      "m1_rate" : 0.0,
+      "m5_rate" : 0.0,
+      "mean_rate" : 0.0,
+      "duration_units" : "seconds",
+      "rate_units" : "calls/second"
+    },
+    "io.dropwizard.jetty.MutableServletContextHandler.head-requests" : {
+      "count" : 0,
+      "max" : 0.0,
+      "mean" : 0.0,
+      "min" : 0.0,
+      "p50" : 0.0,
+      "p75" : 0.0,
+      "p95" : 0.0,
+      "p98" : 0.0,
+      "p99" : 0.0,
+      "p999" : 0.0,
+      "stddev" : 0.0,
+      "m15_rate" : 0.0,
+      "m1_rate" : 0.0,
+      "m5_rate" : 0.0,
+      "mean_rate" : 0.0,
+      "duration_units" : "seconds",
+      "rate_units" : "calls/second"
+    },
+    "io.dropwizard.jetty.MutableServletContextHandler.move-requests" : {
+      "count" : 0,
+      "max" : 0.0,
+      "mean" : 0.0,
+      "min" : 0.0,
+      "p50" : 0.0,
+      "p75" : 0.0,
+      "p95" : 0.0,
+      "p98" : 0.0,
+      "p99" : 0.0,
+      "p999" : 0.0,
+      "stddev" : 0.0,
+      "m15_rate" : 0.0,
+      "m1_rate" : 0.0,
+      "m5_rate" : 0.0,
+      "mean_rate" : 0.0,
+      "duration_units" : "seconds",
+      "rate_units" : "calls/second"
+    },
+    "io.dropwizard.jetty.MutableServletContextHandler.options-requests" : {
+      "count" : 0,
+      "max" : 0.0,
+      "mean" : 0.0,
+      "min" : 0.0,
+      "p50" : 0.0,
+      "p75" : 0.0,
+      "p95" : 0.0,
+      "p98" : 0.0,
+      "p99" : 0.0,
+      "p999" : 0.0,
+      "stddev" : 0.0,
+      "m15_rate" : 0.0,
+      "m1_rate" : 0.0,
+      "m5_rate" : 0.0,
+      "mean_rate" : 0.0,
+      "duration_units" : "seconds",
+      "rate_units" : "calls/second"
+    },
+    "io.dropwizard.jetty.MutableServletContextHandler.other-requests" : {
+      "count" : 0,
+      "max" : 0.0,
+      "mean" : 0.0,
+      "min" : 0.0,
+      "p50" : 0.0,
+      "p75" : 0.0,
+      "p95" : 0.0,
+      "p98" : 0.0,
+      "p99" : 0.0,
+      "p999" : 0.0,
+      "stddev" : 0.0,
+      "m15_rate" : 0.0,
+      "m1_rate" : 0.0,
+      "m5_rate" : 0.0,
+      "mean_rate" : 0.0,
+      "duration_units" : "seconds",
+      "rate_units" : "calls/second"
+    },
+    "io.dropwizard.jetty.MutableServletContextHandler.post-requests" : {
+      "count" : 0,
+      "max" : 0.0,
+      "mean" : 0.0,
+      "min" : 0.0,
+      "p50" : 0.0,
+      "p75" : 0.0,
+      "p95" : 0.0,
+      "p98" : 0.0,
+      "p99" : 0.0,
+      "p999" : 0.0,
+      "stddev" : 0.0,
+      "m15_rate" : 0.0,
+      "m1_rate" : 0.0,
+      "m5_rate" : 0.0,
+      "mean_rate" : 0.0,
+      "duration_units" : "seconds",
+      "rate_units" : "calls/second"
+    },
+    "io.dropwizard.jetty.MutableServletContextHandler.put-requests" : {
+      "count" : 0,
+      "max" : 0.0,
+      "mean" : 0.0,
+      "min" : 0.0,
+      "p50" : 0.0,
+      "p75" : 0.0,
+      "p95" : 0.0,
+      "p98" : 0.0,
+      "p99" : 0.0,
+      "p999" : 0.0,
+      "stddev" : 0.0,
+      "m15_rate" : 0.0,
+      "m1_rate" : 0.0,
+      "m5_rate" : 0.0,
+      "mean_rate" : 0.0,
+      "duration_units" : "seconds",
+      "rate_units" : "calls/second"
+    },
+    "io.dropwizard.jetty.MutableServletContextHandler.requests" : {
+      "count" : 0,
+      "max" : 0.0,
+      "mean" : 0.0,
+      "min" : 0.0,
+      "p50" : 0.0,
+      "p75" : 0.0,
+      "p95" : 0.0,
+      "p98" : 0.0,
+      "p99" : 0.0,
+      "p999" : 0.0,
+      "stddev" : 0.0,
+      "m15_rate" : 0.0,
+      "m1_rate" : 0.0,
+      "m5_rate" : 0.0,
+      "mean_rate" : 0.0,
+      "duration_units" : "seconds",
+      "rate_units" : "calls/second"
+    },
+    "io.dropwizard.jetty.MutableServletContextHandler.trace-requests" : {
+      "count" : 0,
+      "max" : 0.0,
+      "mean" : 0.0,
+      "min" : 0.0,
+      "p50" : 0.0,
+      "p75" : 0.0,
+      "p95" : 0.0,
+      "p98" : 0.0,
+      "p99" : 0.0,
+      "p999" : 0.0,
+      "stddev" : 0.0,
+      "m15_rate" : 0.0,
+      "m1_rate" : 0.0,
+      "m5_rate" : 0.0,
+      "mean_rate" : 0.0,
+      "duration_units" : "seconds",
+      "rate_units" : "calls/second"
+    },
+    "org.eclipse.jetty.server.HttpConnectionFactory.8080.connections" : {
+      "count" : 0,
+      "max" : 0.0,
+      "mean" : 0.0,
+      "min" : 0.0,
+      "p50" : 0.0,
+      "p75" : 0.0,
+      "p95" : 0.0,
+      "p98" : 0.0,
+      "p99" : 0.0,
+      "p999" : 0.0,
+      "stddev" : 0.0,
+      "m15_rate" : 0.0,
+      "m1_rate" : 0.0,
+      "m5_rate" : 0.0,
+      "mean_rate" : 0.0,
+      "duration_units" : "seconds",
+      "rate_units" : "calls/second"
+    },
+    "org.eclipse.jetty.server.HttpConnectionFactory.8081.connections" : {
+      "count" : 2,
+      "max" : 22.558804675,
+      "mean" : 22.558680129000003,
+      "min" : 22.558555583,
+      "p50" : 22.558804675,
+      "p75" : 22.558804675,
+      "p95" : 22.558804675,
+      "p98" : 22.558804675,
+      "p99" : 22.558804675,
+      "p999" : 22.558804675,
+      "stddev" : 1.24546E-4,
+      "m15_rate" : 0.002191574188921952,
+      "m1_rate" : 0.027072376727683665,
+      "m5_rate" : 0.006394670392516757,
+      "mean_rate" : 0.03664822028151027,
+      "duration_units" : "seconds",
+      "rate_units" : "calls/second"
+    }
+  }
+}

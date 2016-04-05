@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.cafepress.newrelic.plugin</groupId>
+    <artifactId>newrelic-dropwizard</artifactId>
+    <!-- Keep in sync with DropwizardAgent.VERSION -->
+    <version>1.0.0</version>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <repositories>
+        <repository>
+            <!-- The New Relic platform library is not currently available from any public maven repositories.  The jar
+            was obtained from https://github.com/newrelic-platform/metrics_publish_java and it's included as part of this
+            project via a filesystem-based maven repo that's checked into source control. For future reference, this
+            local repository can be updated with a new jar using:
+
+            mvn org.apache.maven.plugins:maven-install-plugin:2.3.1:install-file \
+            -Dversion=JAR-VERSION-FROM-GITHUB \
+            -Dfile=JAR-FROM-GITHUB \
+            -Dsources=JARRED-SOURCES-FROM-GITHUB \
+            -DgroupId=com.newrelic.metrics \
+            -DartifactId=metrics-publish \
+            -Dpackaging=jar -DlocalRepositoryPath=newrelic-dropwizard/lib/
+
+            Note that the source jar is not provided on New Relic's github account and has to be manually created.
+            -->
+            <id>for-jars-unavailable-in-maven</id>
+            <url>file://${basedir}/lib</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.newrelic.metrics</groupId>
+            <artifactId>metrics-publish</artifactId>
+            <version>2.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.jersey.core</groupId>
+            <artifactId>jersey-client</artifactId>
+            <version>2.16</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.jaxrs</groupId>
+            <artifactId>jackson-jaxrs-json-provider</artifactId>
+            <version>2.4.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.jcabi</groupId>
+            <artifactId>jcabi-manifests</artifactId>
+            <version>1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>18.0</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>1.10.19</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-library</artifactId>
+            <version>1.3</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>2.3</version>
+                <configuration>
+                    <createDependencyReducedPom>false</createDependencyReducedPom>
+                    <!-- plugin.jar adheres to New Relic's NPI compatibility requirements -->
+                    <finalName>plugin</finalName>
+                    <filters>
+                        <filter>
+                            <artifact>*:*</artifact>
+                            <excludes>
+                                <exclude>META-INF/*.SF</exclude>
+                                <exclude>META-INF/*.DSA</exclude>
+                                <exclude>META-INF/*.RSA</exclude>
+                            </excludes>
+                        </filter>
+                    </filters>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <transformers>
+                                <transformer
+                                        implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                    <manifestEntries>
+                                        <Specification-Title>New Relic Dropwizard Plugin</Specification-Title>
+                                        <Specification-Vendor>CafePress Inc.</Specification-Vendor>
+                                        <Implementation-Vendor>CafePress Inc.</Implementation-Vendor>
+                                        <Built-Date>${maven.build.timestamp}</Built-Date>
+                                        <New-Relic-Plugin-Version>${project.version}</New-Relic-Plugin-Version>
+                                        <Specification-Version>${project.version}</Specification-Version>
+                                        <Implementation-Version>${project.version} ${maven.build.timestamp}
+                                        </Implementation-Version>
+                                        <Main-Class>io.dnbg.newrelic.dropwizard.Main</Main-Class>
+                                    </manifestEntries>
+                                </transformer>
+                                <transformer
+                                        implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+                            </transformers>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <configuration>
+                    <descriptor>src/assembly/plugin.xml</descriptor>
+                    <finalName>newrelic-dropwizard-${project.version}</finalName>
+                    <appendAssemblyId>false</appendAssemblyId>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

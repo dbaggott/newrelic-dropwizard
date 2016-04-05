@@ -1,0 +1,9 @@
+{
+    "checkWithMessage": {
+        "healthy": true,
+        "message": "some message"
+    },
+    "checkWithoutMessage": {
+        "healthy": true
+    }
+}

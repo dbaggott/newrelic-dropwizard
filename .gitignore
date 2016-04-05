@@ -1,0 +1,10 @@
+# IntelliJ project files
+.idea/
+*.iml
+
+# Maven output
+target/
+
+# agent config used for integration testing
+config/plugin.json
+config/newrelic.json

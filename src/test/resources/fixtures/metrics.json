@@ -1,0 +1,92 @@
+{
+  "version": "3.0.0",
+  "gauges": {
+    "error": {
+      "error": "message"
+    },
+    "nullValue": {
+      "value": null
+    },
+    "stringValue": {
+      "value": "value"
+    },
+    "emptyArray": {
+      "value": []
+    },
+    "stringArray": {
+      "value": [
+        "first",
+        "second"
+      ]
+    },
+    "int": {
+      "value": 1
+    },
+    "double": {
+      "value": 0.056430816650390625
+    }
+  },
+  "counters": {
+    "error": {
+      "error": "message"
+    },
+    "counter": {
+      "count": 1
+    }
+  },
+  "histograms": {
+    "error": {
+      "error": "message"
+    },
+    "histogram" : {
+      "count" : 71395619,
+      "max" : 656036,
+      "mean" : 7331.137159533074,
+      "min" : 0.1,
+      "p50" : 128.0,
+      "p75" : 1340.25,
+      "p95" : 25276.55,
+      "p98" : 67771.27999999997,
+      "p99" : 191443.7100000005,
+      "p999" : 654688.5150000001,
+      "stddev" : 41176.632195974824
+    }
+  },
+  "meters": {
+    "error": {
+      "error": "message"
+    },
+    "meter": {
+      "count": 20,
+      "m15_rate": 3.6395131280614716,
+      "m1_rate": 0.970084298542596,
+      "m5_rate": 3.013074625818629,
+      "mean_rate": 0.2179997368743176,
+      "units": "events/second"
+    }
+  },
+  "timers": {
+    "error": {
+      "error": "message"
+    },
+    "timer": {
+      "count": 213129,
+      "max": 341.999257165,
+      "mean": 67.00363584754572,
+      "min": 58.82701595300001,
+      "p50": 59.9983916515,
+      "p75": 59.99949046825,
+      "p95": 120.39979615434964,
+      "p98": 196.67973126061986,
+      "p99": 222.4197314987001,
+      "p999": 340.46224397356724,
+      "stddev": 30.069746144819348,
+      "m15_rate": 0.04910168634728172,
+      "m1_rate": 0.017163163404961646,
+      "m5_rate": 0.037938755998770855,
+      "mean_rate": 0.052878364032099695,
+      "duration_units": "seconds",
+      "rate_units": "calls/second"
+    }
+  }
+}

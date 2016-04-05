@@ -1,0 +1,18 @@
+{
+    "checkWithMessage": {
+        "healthy": false,
+        "message": "some message"
+    },
+    "checkWithoutMessage": {
+        "healthy": false
+    },
+    "checkWithError": {
+        "healthy": false,
+        "message": "Login failed for user",
+        "error": {
+            "message": "Login failed for user 'unknown'.",
+            "stack": [ "net.sourceforge.jtds.jdbc.SQLDiagnostic.addDiagnostic(SQLDiagnostic.java:372)",
+                "etc" ]
+        }
+    }
+}

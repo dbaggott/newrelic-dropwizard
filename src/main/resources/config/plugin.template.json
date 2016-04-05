@@ -1,0 +1,14 @@
+{
+    "_comments": {
+        "agents": "Create one entry per Dropwizard application to be monitored",
+        "host": "REQUIRED: the host/ip of the Dropwizard application to be monitored",
+        "appName": "Optional: Dropwizard application name to display within New Relic dashboard UI (defaults to 'host')",
+        "adminPort": "Optional: port /metrics and /healthcheck requests are serviced from (defaults to 8081)"
+    },
+    "agents": [
+        {
+            "host": "localhost",
+            "appName": "AppName"
+        }
+    ]
+}
