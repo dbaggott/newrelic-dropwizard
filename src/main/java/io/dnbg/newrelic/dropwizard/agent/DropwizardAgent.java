@@ -17,7 +17,7 @@ class DropwizardAgent extends Agent implements NewRelicAgent {
     private static final Logger logger = Logger.getLogger(DropwizardAgent.class);
 
     private static final String GUID = "io.dnbg.newrelic.dropwizard";
-    private static final String VERSION = "1.0.0"; // keep in sync with pom.xml version
+    private static final String VERSION = "1.0.1"; // keep in sync with pom.xml version
 
     private String agentName;
     private List<PollTask> pollTasks;
