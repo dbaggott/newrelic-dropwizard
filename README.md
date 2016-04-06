@@ -28,7 +28,8 @@ messages within NR.
 ## Metrics Data Collection
 
 A wide-range of the standard Dropwizard metrics as exposed on `/metrics` are collected and displayed within the NR
-dashboard including (among other things) information about requests rates and response times, threading, memory, 
+dashboard including (among other things) information about requests rates and response times, request queueing, 
+threading, and memory. 
 
 ## Installation
 
@@ -44,7 +45,7 @@ Additionally, New Relic has [documentation for doing it the Chef or Puppet way]
 
 ## Dropwizard Version Support
 
-The agent has been tested with Dropwizard version 0.7.1 through 0.9.4.  However, some older versions of Dropwizard
+The agent has been tested with Dropwizard version 0.7.1 through 0.9.2.  However, some older versions of Dropwizard
 are missing metrics that are reported by this plugin.  In those cases, the corresponding graphs or data points will
 be blank within NR.
 
