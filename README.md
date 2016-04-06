@@ -1,4 +1,6 @@
-# newrelic-dropwizard
+[![Build Status](https://travis-ci.org/dbaggott/newrelic-dropwizard.svg?branch=master)](https://travis-ci.org/dbaggott/newrelic-dropwizard)
+
+# New Relic Dropwizard Plugin
 
 A [New Relic (NR)](http://newrelic.com/plugins) plugin agent for monitoring the health and performance of one or more
 [Dropwizard](http://dropwizard.io/) applications over http using the applications' `/healthcheck` and `/metrics` 
@@ -32,9 +34,9 @@ dashboard including (among other things) information about requests rates and re
 
 ## Installation
 
-Pre-requisites: java (any version should work)
+Pre-requisites: java (>= 6)
 
-This plugin is available in Plugin Central and is 
+This plugin is available in [Plugin Central](http://newrelic.com/plugins/iodnbg/487) and is 
 NPI-compliant and can be [installed using NPI]
 (https://docs.newrelic.com/docs/plugins/plugins-new-relic/installing-plugins/installing-npi-compatible-plugin). 
 
@@ -48,6 +50,8 @@ Additionally, New Relic has [documentation for doing it the Chef or Puppet way]
 The agent has been tested with Dropwizard version 0.7.1 through 0.9.4.  However, some older versions of Dropwizard
 are missing metrics that are reported by this plugin.  In those cases, the corresponding graphs or data points will
 be blank within NR.
+
+Dropwizard `/metrics` changes:
 
 * 0.8.0: adds `org.eclipse.jetty.util.thread.QueuedThreadPool.dw.utilization-max` to provide utilization of the thread
 pool relative to the max allowed threads
