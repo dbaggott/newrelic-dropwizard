@@ -1,6 +1,4 @@
-[![Build Status](https://travis-ci.org/dbaggott/newrelic-dropwizard.svg?branch=master)](https://travis-ci.org/dbaggott/newrelic-dropwizard)
-
-# New Relic Dropwizard Plugin
+# New Relic Dropwizard Plugin [![Build Status](https://travis-ci.org/dbaggott/newrelic-dropwizard.svg?branch=master)](https://travis-ci.org/dbaggott/newrelic-dropwizard)
 
 A [New Relic (NR)](http://newrelic.com/plugins) plugin agent for monitoring the health and performance of one or more
 [Dropwizard](http://dropwizard.io/) applications over http using the applications' `/healthcheck` and `/metrics` 
