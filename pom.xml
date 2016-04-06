@@ -6,7 +6,7 @@
 
     <groupId>com.cafepress.newrelic.plugin</groupId>
     <artifactId>newrelic-dropwizard</artifactId>
-    <version>1.0.1</version> <!-- Keep in sync with DropwizardAgent.VERSION -->
+    <version>1.0.2</version> <!-- Keep in sync with DropwizardAgent.VERSION -->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
@@ -153,6 +153,25 @@
                     <source>1.6</source>
                     <target>1.6</target>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.7.5.201505241946</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>report</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
