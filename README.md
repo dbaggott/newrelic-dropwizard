@@ -31,6 +31,10 @@ A wide-range of the standard Dropwizard metrics as exposed on `/metrics` are col
 dashboard including (among other things) information about requests rates and response times, request queueing, 
 threading, and memory. 
 
+## New Relic Plugin Dashboard UI
+
+<img src="https://cloud.githubusercontent.com/assets/112677/14356368/75ba0a66-fc99-11e5-894f-d7c16275036e.png" width="90%"></img> <img src="https://cloud.githubusercontent.com/assets/112677/14356789/13d6acd0-fc9b-11e5-83b7-891bc2683288.png" width="90%"></img> <img src="https://cloud.githubusercontent.com/assets/112677/14356393/9427fc7e-fc99-11e5-9e48-0ef1edc31c6d.png" width="90%"></img> <img src="https://cloud.githubusercontent.com/assets/112677/14356413/a14b043c-fc99-11e5-9b45-c6f0017d62ee.png" width="90%"></img> <img src="https://cloud.githubusercontent.com/assets/112677/14356440/c06ba79a-fc99-11e5-83fe-37744e2f9167.png" width="90%"></img> <img src="https://cloud.githubusercontent.com/assets/112677/14356427/b10950cc-fc99-11e5-964d-230e5898eef4.png" width="90%"></img> 
+
 ## Installation
 
 Pre-requisites: java (>= 6)
