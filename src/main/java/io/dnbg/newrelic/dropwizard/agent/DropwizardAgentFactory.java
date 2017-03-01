@@ -35,17 +35,17 @@ public class DropwizardAgentFactory extends AgentFactory {
 
     private void registerProbes(AgentProperties properties, DropwizardAgent agent) {
         MetricAwareNewRelicAgent metricsAwareAgent = new MetricAwareNewRelicAgent(agent);
-        WebTarget adminWebResource = createAdminWebResource(properties.getHost(), properties.getAdminPort(), properties.getAdminPath());
+        WebTarget adminWebResource = createAdminWebResource(properties.getProtocol(), properties.getHost(), properties.getAdminPort(), properties.getAdminPath());
 
         agent.add(new HealthCheckProbe(adminWebResource), new HealthCheckReporter(metricsAwareAgent));
         agent.add(new MetricsProbe(adminWebResource), new MetricsReporter(metricsAwareAgent));
     }
 
-    private WebTarget createAdminWebResource(String host, int port, String adminPath) {
+    private WebTarget createAdminWebResource(String protocol, String host, int port, String adminPath) {
         return ClientBuilder
                 .newBuilder()
                 .register(new JacksonJsonProvider(objectMapper))
                 .build()
-                .target("http://" + host + ":" + port + adminPath);
+                .target(protocol + "://" + host + ":" + port + adminPath);
     }
 }

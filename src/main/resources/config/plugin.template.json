@@ -2,6 +2,7 @@
   "_comments": {
     "agents": "Create one entry per Dropwizard application to be monitored",
     "host": "REQUIRED: the host/ip of the Dropwizard application to be monitored",
+    "protocol": "Optional: Dropwizard application protocol (http or https, defaults to 'http')",
     "name": "Optional: Dropwizard application name to display within New Relic dashboard UI (defaults to 'host')",
     "adminPort": "Optional: port /metrics and /healthcheck requests are serviced from (defaults to 8081)",
     "adminPath": "Optional: Use to specify a non-standard admin url path (such as when serving multiple dropwizard applications from the same host/port). For example, if set to '/myApp', health checks would be made using '/myApp/healthcheck'"

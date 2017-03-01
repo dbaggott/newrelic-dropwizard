@@ -30,6 +30,12 @@ public class AgentPropertiesTest {
     }
 
     @Test
+    public void protocolShouldDefaultToHttp() throws Exception {
+        AgentProperties properties = AgentProperties.parse(Collections.<String, Object>emptyMap());
+        assertThat(properties.getProtocol(), is("http"));
+    }
+
+    @Test
     public void missingNameShouldDefaultToHost() throws Exception {
         AgentProperties properties = AgentProperties.parse(ImmutableMap.<String, Object>of("host", "some.host.com"));
         assertThat(properties.getName(), is("some.host.com"));
