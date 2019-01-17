@@ -44,6 +44,10 @@ This plugin is available in [Plugin Central](http://newrelic.com/plugins/iodnbg/
 
 `npi install io.dnbg.newrelic.dropwizard`
 
+As part of installation, you'll be prompted to configure the plugin so that it "knows" where to access your Dropwizard application.  Specifically, you need to provide a network name or ip address at which the Dropwizard application can be accessed.  Optionally, you can also provide a name that will be used within the NewRelic UI to label your application. As with all plugins, the plugin data appears in the plugin section of New Relic.
+
+Since the plugin is polling the Dropwizard application, nothing needs to be configured or changed on the Dropwizard application itself.  However, the machine that is running the plugin must have network access to the Dropwizard application. 
+
 Additionally, New Relic has [documentation for doing it the Chef or Puppet way]
 (https://docs.newrelic.com/docs/plugins/plugins-new-relic/installing-plugins/plugin-installation-chef-and-puppet).
 
