@@ -22,6 +22,14 @@ class AgentProperties {
         return Strings.isNullOrEmpty(name) ? getHost() : name;
     }
 
+    String getProtocol() {
+        if (properties.containsKey("protocol")) {
+            return (String) properties.get("protocol");
+        } else {
+            return "http"; // Default HTTP
+        }
+    }
+
     String getHost() {
         return (String) properties.get("host");
     }
