@@ -1,4 +1,11 @@
-# New Relic Dropwizard Plugin [![Build Status](https://travis-ci.org/dbaggott/newrelic-dropwizard.svg?branch=master)](https://travis-ci.org/dbaggott/newrelic-dropwizard) [![codecov](https://codecov.io/gh/dbaggott/newrelic-dropwizard/branch/master/graph/badge.svg)](https://codecov.io/gh/dbaggott/newrelic-dropwizard)
+# New Relic Dropwizard Plugin [![codecov](https://codecov.io/gh/dbaggott/newrelic-dropwizard/branch/master/graph/badge.svg)](https://codecov.io/gh/dbaggott/newrelic-dropwizard)
+
+> [!IMPORTANT]
+> **Archived & Superseded**
+>
+> This project is no longer maintained. It was built over a decade ago to bridge Dropwizard and New Relic before native integration existed, and has since been superseded by New Relic's official in-house support.
+>
+> For active projects, see [New Relic's Java Agent & Dropwizard documentation](https://docs.newrelic.com/).
 
 A [New Relic (NR)](https://newrelic.com/plugins/oo/487) plugin agent for monitoring the health and performance of one or more
 [Dropwizard](http://dropwizard.io/) applications over http using the applications' `/healthcheck` and `/metrics` 
